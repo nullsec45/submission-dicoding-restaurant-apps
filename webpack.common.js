@@ -9,13 +9,14 @@ module.exports = {
   },
   output: {
     filename: '[name].bundle.js',
+    clean: true,
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
   module: {
     rules: [
       {
-        test: /\.css$/,
+        test: /\.s[ac]ss$/i,
         use: [
           {
             loader: 'style-loader',
@@ -23,6 +24,9 @@ module.exports = {
           {
             loader: 'css-loader',
           },
+          {
+            loader: 'sass-loader',
+          }
         ],
       },
     ],
