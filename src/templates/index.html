@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Restaurant Apps</title>
-  </head>
-  <body>
-    <h1>Restaurant Apps Starter Project</h1>
-    <p>Hallo coders! Anda berhasil menjalankan starter project.</p>
-    <p>
-      Jangan lupa untuk menggunakan salah satu gambar yang berada pada ./images/heros
-      sebagai background hero elemen.
-    </p>
-    <img src="./images/heros/hero-image_1.jpg" width="450" alt="" />
-    <img src="./images/heros/hero-image_2.jpg" width="450" alt="" />
-    <img src="./images/heros/hero-image_3.jpg" width="450" alt="" />
-    <img src="./images/heros/hero-image_4.jpg" width="450" alt="" />
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Restaurant Apps</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/af2ff99e20.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <button id="content_skip" class="content_skip">Skip To Content <i class="fas fa-arrow-right"></i></button>
+  <header>
+    <nav>
+      <div class="navbar_list">
+        <a href="/" class="logo">GoResto</a>
+        <ul class="navs navbar_items">
+          <li><a href="">Home</a></li>
+          <li><a href="">Favorite</a></li>
+          <li><a href="">About Us</a></li>
+        </ul>
+        <button class="hamburger_icon" id="hamburger_icon">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="navbar_responsive" id="navbar_responsive">
+        <a href="">Home</a>
+        <a href="">Favorite</a>
+        <a href="">About Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="jumbotron">
+      <h1>Cari resto murah, lengkap, dan enak buat nongkrong ?</h1>
+      <h1>GoResto Ajah!</h1>
+      <picture>
+        <source srcset="./images/heros/hero-image_2.jpg">
+        </source>
+        <img src="./images/heros/hero-image_2.jpg" alt="Hero Image" class="" />
+      </picture>
+    </div>
+    <div class="search">
+      <div class="komponen_search">
+        <h1>Cari Restaurant</h1>
+        <div class="input_search">
+          <input type="text" placeholder="Masukkan Nama Restaurant">
+          <button>Cari</button>
+        </div>
+      </div>
+    </div>
+    <div class="restaurant_list" id="content">
+
+    </div>
+  </main>
+
+  <footer tabindex="0">
+    <p tabindex="0">Copyright &copy; 2023 - <span class="logo" tabindex="0">GoResto</span> All rights reserved.</p>
+  </footer>
+</body>
+
 </html>
