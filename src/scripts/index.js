@@ -143,13 +143,14 @@ daftar_restaurant.forEach((resto, index) => {
     renderCardRestaurant(resto);
 });
 
-
+// content_skip
 const content_skip = document.querySelector("#content_skip");
 
 content_skip.addEventListener("click", function () {
     document.location.href = "#content";
 })
 
+// search restaurant
 const input_search = document.querySelector(".search .komponen_search .input_search input");
 const button_search = document.querySelector(".search .komponen_search .input_search button");
 
